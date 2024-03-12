@@ -1,0 +1,288 @@
+/* #img-1{ opacity:0.8;
+    width: 100%;
+    height: 200px;
+    border-radius: 30px; 
+}*/
+.dev-1
+{   opacity:0.8;
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    position:relative;
+    margin-bottom:20px;
+    margin-left: 20px;
+    /* border-radius: 20px; */
+    /* width: 550px;
+    height: 30px; */
+    /* color: rgb(28, 14, 14); */
+    /* background-color: rgb(10, 8, 8); */
+}
+.dev-1-1{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.dev-1-2
+{   
+    margin-top: -200px;
+    width:400px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#dev-1-3
+{   
+    padding-right: 15px; 
+    background-color:burlywood;
+    border-color:burlywood;
+    border-radius: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50px;
+    height: 30px;
+    color:rgb(106, 14, 218);
+}
+
+.dev-2
+{ position: relative;
+    margin-top: -17px;
+    width: 100%x;
+    height: 40px;
+    background-color:white;
+    border-radius: 30px;
+    text-align: center;
+}
+.dev-2-1
+{ position: relative;
+margin-top: -25px;
+}
+
+.dev-2-2
+{
+    background-color:white;
+    border-radius: 20px;
+    width: 100%;
+    /* margin: 3px; */
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dev-2-3
+{   background-color: white;
+    
+    width: 24.5%;
+    margin-top: -5;
+    height: 90px; 
+    display: flex;
+    flex-wrap: wrap;
+    
+       
+}
+.dev-2-4
+{   position: relative;
+    background-color: white;
+    
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+}
+#dev-2-4-1
+{position: relative;
+    margin-top: -20px;
+    border-radius: 50px;
+    
+    width: 70%;
+    height: 70%;
+    padding: 5px;;
+}
+
+
+.dev-3
+{ position:relative;
+    border-radius: 30px;
+    text-align: left;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    height: 250px;
+    background-color:rgb(82, 79, 79);
+    display: flex;
+    margin-top: 10px;
+    
+    
+}
+.dev-3-1
+{   background-color: rgb(82, 79, 79);
+    border-radius: 20px;
+    width: 300;
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    color: white;
+    padding: 5px;
+   
+}
+.dev-3-2
+{position: relative;
+    background-color: white;
+    color: black;
+    width: 95%;
+    height: 240px;
+    border-radius: 20px;
+    
+}
+#dev-3-im-1
+{position: relative;
+    border-radius: 10px;
+    
+    width:95%;
+    height: 100px;   
+} 
+.dev-4
+{position: relative;
+    color: black;
+    background-color: white;
+    
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-top: 10px;
+        
+}
+.dev-4-1
+{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    margin-left: 600px;
+}
+.dev-5 {position:relative;
+        background-color: white;
+         
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.dev-5-1
+{  background-color:white;
+    width: 370;
+    height: 300px;
+    border-style: solid;
+    border-color: white;
+    margin-left: 50px; 
+    position: relative;
+    box-sizing: border-box;
+    
+    
+    
+}
+.dev-5-2
+{   position: relative;
+    /* padding-left:200px; */
+    width: 100%;
+    height: 280px;
+    
+    
+}
+#dev-5-2-1
+{   position: relative;
+    width:100%;
+    height: 300px;
+    background-color:white;
+    color: rgb(8, 6, 6);
+    text-align: center;
+    
+}
+#dev-5-2-1-1
+{
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+#dev-5-2-1-2
+{
+    background-color: gray;
+    height: 40px;
+    color: white;
+}
+#dev-5-2-1-3
+{
+    height: 40px;
+}
+#dev-5-2-1-5
+{
+    background-color: skyblue;
+}
+.dev-6
+{
+    position: relative;
+    background-color:khaki;
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 30px;
+    height: 260px; 
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.dev-6-1
+{
+    position: relative;
+    background-color:khaki;
+    border-color:khaki;
+    border-radius: 30px;
+    width: 49%;
+    height: 250px;
+    margin-top: 3px;
+    padding: 10px;
+    border-style: solid;
+    box-sizing: border-box;
+    
+}
+.dev-6-2
+{
+   background-color: white;
+   width:100%;
+   height:100%;
+   padding: 5px;
+   margin-top: -5px;
+   
+}
+#dev-6-2-1
+{
+    width: 100%;
+}
+#dev-6-2-2
+{   background-color: black;
+    color: white;
+    margin-left: 460px;
+    
+}
+.dev-7
+{
+    background-color: blueviolet;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.dev-7-1-1
+{
+    width:1337px ;
+    height: 430px;
+    
+}
+#dev-7-1-2
+{
+    text-align: center;
+    background-color: brown;
+}

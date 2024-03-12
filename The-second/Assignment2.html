@@ -1,0 +1,104 @@
+<html>
+    <head>      
+                
+    </head>
+    <body>
+        <br>
+        <br>
+        <style>
+            table {
+              border-collapse: separate;
+              border-spacing: 10px; /* Adjust spacing as needed */
+            }
+          </style>
+           
+
+        <table align="center" border="2px" dir="rtl" >
+            
+           <tr> 
+               <td>نام</td>
+               <td align="center"> 
+                <input type="text" placeholder="Name">
+               </td>
+           </tr>
+           <tr>
+                <td rowspan="2">ایمیل</td>
+                <td align="center">
+                    <input type="email" placeholder="Email">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="text" placeholder="***">
+                </td>
+            </tr>    
+            <tr>
+            <td>تاریخ تولد</td>
+            <td align="center">
+                <input type="date" value="1994-08-08">
+            </td>
+            </tr>
+            <tr>
+                <td align>سن</td>
+            <td align="center">
+                <input type="number" value="27">
+            </td>
+           </tr>
+           <tr>
+            <td >رنگ مورد علاقه</td>
+            <td align="center">
+                <input type="color" value="#00ff00">
+            </td>
+           </tr>
+           <tr>
+            <td >ماسک مزنی یا نه یره؟</td>
+            <td align="center">
+                <input type="radio">ماسک مزنوم
+                     <img src="images/download.jfif" width="20">
+                     <br>
+                <input type="radio">ماسک نمزنوم
+                    <img src="images/download-1.jfif" width="30"> 
+                            </td>
+           </tr>
+           <tr>
+            <td >میوه مورد علاقه</td>
+            <td>
+                <input type="checkbox"> <img src="images/download-2.jfif" width="20">
+                <input type="checkbox"><img src="images/download-3.png" width="20">
+                <input type="checkbox"><img src="images/download-4.jfif" width="20">
+                <input type="checkbox" id="1"><img src="images/download-5.jfif" width="20">
+                <input type="checkbox" id="2"><img src="images/download-6.jfif" width="20">
+                
+            <script>
+                document.getElementById("1").checked = true;
+                document.getElementById("2").checked = true;
+            </script>
+
+            </td>
+           </tr>
+           <tr>
+            <td>کشور</td>
+            <td align="center">
+                <select>
+                    <option value="UK"> انگلیس</option>
+                    <option value="IR" selected>ایران</option>
+                    <option value="US">آمریکا</option>
+                </select>
+                
+            </td>
+           </tr>
+           <tr>
+            <td>زندگینامه</td>
+            <td>
+                <textarea name="" id="" cols="30" rows="5"> هر چه می خواهد دل تنگت بگو</textarea>
+            </td>
+           </tr>
+           <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="نام نویسی"> 
+            </td>
+            
+           </tr>
+        </table>
+    </body>
+</html>
