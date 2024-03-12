@@ -77,9 +77,10 @@ margin-top: -25px;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    transition: transform 2s ,background-color 5s;
+    
 }
 .dev-2-2:hover{
+    transition: transform 2s ,background-color 5s;
     background-color: white;
     transform: rotate(20deg);
     
