@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <title>android logo</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="طراحی لوگوی اندروید">
+        <meta name="author" content="مرتضی دهقانی">
+        <meta name="keywords" content="اندروید">
+         
+    </head>
+</html>
+<body>
+    <div class="logo">
+        
+        <div id="logo-h">
+                <div id="logo-h-1">
+        
+                </div>
+                <div id="logo-h-2">
+        
+                </div>
+                <div id="logo-h-3">
+        
+                </div>
+                <div id="logo-h-4">
+        
+                </div>
+            
+        </div>
+        <div id="logo-b">
+            <button id="logo-b-btn-up"></button>
+            <!-- <button id="logo-b-btn-down"></button> -->
+    
+        </div>
+        <div id="logo-lf">
+    
+        </div>
+        <div id="logo-rf">
+    
+        </div>
+        <div id="logo-rh" class="shake_r"  >
+          
+        </div>
+        <div id="logo-lh" class = "shake_l">
+    
+        </div>
+        
+        
+    </div>
+  
+
+
+    <script>
+        var body_btn_up = document.getElementById("logo-b-btn-up");
+        var body_btn_down = document.getElementById("logo-b-btn-down");
+        var l_eyes =document.getElementById("logo-h-1")
+        var r_eyes = document.getElementById("logo-h-2")
+        var body = document.getElementById("logo-b")
+        var r_h = document.getElementById("logo-rh");
+        var l_h = document.getElementById("logo-lh");
+        var head = document.getElementById("logo-h")
+        
+        r_h.onclick = function(){
+                            r_h.style.marginTop = "-150px"; 
+                            r_h.style.transform = "rotate(+20deg)"
+                            r_h.style.transform = "rotate(-10deg)"
+                            r_h.style.animation="shake 0.5s infinite";
+                            l_h.style.marginTop ="0px" ;
+                            l_h.style.animation="shake 0s infinite";
+                                      
+        }
+        
+        
+        l_h.onclick = function()
+        {                   r_h.style.marginTop = "-100px"; 
+                            r_h.style.transform = "rotate(0deg)"
+                            r_h.style.transform = "rotate(0deg)"
+                            l_h.style.marginTop = "-100px"; 
+                            l_h.style.transform = "rotate(+20deg)"
+                            l_h.style.transform = "rotate(-2deg)"
+                            l_h.style.animation="shake 0.5s infinite";
+                            r_h.style.animation="shake 0s infinite";
+                               
+        }
+        body.onclick = function()
+        {               r_h.style.marginTop = "-100px"; 
+                        r_h.style.transform = "rotate(0deg)"
+                        r_h.style.transform = "rotate(0deg)"
+                        l_h.style.marginTop = "-50px"; 
+                        l_h.style.transform = "rotate(0deg)"
+                        l_h.style.transform = "rotate(0deg)"
+                        l_h.style.animation="shake 0s infinite";
+                        r_h.style.animation="shake 0s infinite";
+                        r_eyes.style.backgroundColor = "lightgreen"
+                        l_eyes.style.backgroundColor = "lightgreen"
+        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const h = document.getElementById('logo-h');
+            
+            h.addEventListener('mouseenter', () => {
+                l_eyes.style.backgroundColor = 'white';
+                r_eyes.style.backgroundColor = 'white';
+            });
+
+            
+        });
+        
+       
+    </script>
+</body>
