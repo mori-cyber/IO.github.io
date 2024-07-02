@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neomorphic Calculator</title>
+    <link type="text/css" rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="display">0</div>
+        
+        <div class="buttons">
+            <div class="button" id="button-7">7</div>
+            <div class="button" id="button-8">8</div>
+            <div class="button" id="button-9">9</div>
+            <div class="button special" id="button-divide">/</div>
+            <div class="button" id="button-4">4</div>
+            <div class="button" id="button-5">5</div>
+            <div class="button" id="button-6">6</div>
+            <div class="button special" id="button-multiply">*</div>
+            <div class="button" id="button-1">1</div>
+            <div class="button" id="button-2">2</div>
+            <div class="button" id="button-3">3</div>
+            <div class="button special" id="button-subtract">-</div>
+            <div class="button" id="button-0">0</div>
+            <div class="button" id="button-decimal">.</div>
+            <div class="button special" id="button-equal">=</div>
+            <div class="button special" id="button-add">+</div>
+        </div>
+    </div>
+   
+</body>
+</html>
+<script>
+    // Display element
+var display = document.getElementById("display");
+
+// Variables to store the current value, the previous value, and the operator
+var currentValue = "0";
+var previousValue = "";
+var operator = "";
+
+// Function to update the display
+function updateDisplay() {
+    display.innerText = currentValue;
+}
+
+// Function to handle number and decimal button clicks
+function handleNumberClick(value) {
+    if (currentValue === "0" && value !== ".") {
+        currentValue = value;
+    } else {
+        currentValue += value;
+    }
+    updateDisplay();
+}
+
+// Function to handle operator button clicks
+function handleOperatorClick(op) {
+    if (operator && previousValue && currentValue) {
+        calculate();
+    }
+    previousValue = currentValue;
+    currentValue = "";
+    operator = op;
+}
+
+// Function to calculate the result
+function calculate() {
+    var num1 = parseFloat(previousValue);
+    var num2 = parseFloat(currentValue);
+    var result = 0;
+
+    switch (operator) {
+        case "+":
+            result = num1 + num2;
+            break;
+        case "-":
+            result = num1 - num2;
+            break;
+        case "*":
+            result = num1 * num2;
+            break;
+        case "/":
+            if (num2 === 0) {
+                alert("Cannot divide by zero");
+                return;
+            }
+            result = num1 / num2;
+            break;
+
+    }
+
+    currentValue = result.toString();
+    operator = "";
+    previousValue = "";
+    updateDisplay();
+}
+
+// Adding event listeners to the buttons
+document.querySelectorAll(".button").forEach(button => {
+    button.addEventListener("click", () => {
+        var value = button.innerText;
+
+        if (!isNaN(value) || value === ".") {
+            handleNumberClick(value);
+        } else if (value === "+" || value === "-" || value === "*" || value === "/") {
+            handleOperatorClick(value);
+        } else if (value === "=") {
+            calculate();
+        }
+    });
+});
+
+</script>

@@ -1,0 +1,95 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #E0E0E0;
+            font-family: 'Arial', sans-serif;
+        }
+.calculator {
+            width: 300px;
+            height: 400px;
+            background-color: #E0E0E0;
+            border-radius: 30px;
+            box-shadow: 9px 9px 16px #bebebe, -9px -9px 16px #ffffff;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+#display {
+            height: 80px;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            font-size: 24px;
+            color: #333333;
+        }
+#button-0 {
+            width: 60px;
+            height: 60px;
+            background-color: #F0F0F0;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #333333;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+            transition: box-shadow 0.2s ease;
+        }
+#button-0:active {
+            box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+        }
+
+#button-1 {
+            width: 60px;
+            height: 60px;
+            background-color: #F0F0F0;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #333333;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+            transition: box-shadow 0.2s ease;
+        }
+
+#button-1:active {
+            box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+        }
+
+
+.buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+.button {
+            width: 60px;
+            height: 60px;
+            background-color: #F0F0F0;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #333333;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+            transition: box-shadow 0.2s ease;
+        }
+.button:active {
+            box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+        }
+.button.special {
+            background-color: #D0D0D0;
+        }
